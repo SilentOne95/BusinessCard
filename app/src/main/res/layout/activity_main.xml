@@ -3,7 +3,152 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    tools:context="com.example.android.businesscard.MainActivity">
+    android:layout_height="match_parent"
+    tools:context="com.example.android.businesscard.MainActivity"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/black">
+
+            <TextView
+                android:id="@+id/slogan"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="@string/slogan"
+                style="@style/slogan"/>
+
+            <ImageView
+                android:id="@+id/logo_image"
+                android:src="@drawable/logo"
+                style="@style/logo_image"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/layout_padding"
+            android:paddingRight="@dimen/layout_padding">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+                <ImageView
+                    android:id="@+id/draw_it_sign"
+                    android:src="@drawable/draw_it"
+                    style="@style/draw_and_show_signs"/>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:src="@drawable/picture_one"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                style="@style/default_image_style"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/layout_padding"
+            android:paddingLeft="@dimen/layout_padding">
+
+            <ImageView
+                android:src="@drawable/picture_two"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:paddingBottom="@dimen/layout_padding"
+                style="@style/default_image_style"/>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+                <ImageView
+                    android:id="@+id/show_it_sign"
+                    android:src="@drawable/show_it"
+                    style="@style/draw_and_show_signs"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/black">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5">
+
+                <TextView
+                    android:id="@+id/contact_us_string"
+                    android:text="@string/contact_us"
+                    style="@style/contact_us_string"/>
+
+                <ImageView
+                    android:id="@+id/phone_icon"
+                    android:src="@drawable/phone"
+                    style="@style/phone_icon"/>
+
+                <TextView
+                    android:id="@+id/phone_number"
+                    android:text="@string/phone_number"
+                    style="@style/phone_string"/>
+
+                <ImageView
+                    android:id="@+id/email_icon"
+                    android:src="@drawable/email"
+                    style="@style/email_icon"/>
+
+                <TextView
+                    android:id="@+id/email_address"
+                    android:text="@string/email_address"
+                    style="@style/email_string"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/location_pin"
+                    android:src="@drawable/location_pin"
+                    style="@style/location_pin_icon"/>
+
+                <TextView
+                    android:id="@+id/location_address"
+                    android:text="@string/location_address"
+                    style="@style/location_address"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </ScrollView>

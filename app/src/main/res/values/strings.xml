@@ -1,3 +1,9 @@
 <resources>
+    <string name="slogan">Art of drawing!</string>
+    <string name="contact_us">Contact us:</string>
+    <string name="phone_number">123 456 789</string>
+    <string name="email_address">ArtOfDrawing@work.it</string>
+    <string name="location_address">123 Main St \nWarsaw, 02468</string>
+
     <string name="app_name">Business Card</string>
 </resources>
